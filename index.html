@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation | dropdown menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="primary-header" aria-label="Home">
+      
+        <div class="wrapper-navigation">
+          <a href="#">
+            <img class="logo" src="images/logo.svg" alt="website logo" />
+          </a>
+          <button class="mobile-toggle-button" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+          </button>
+          <div class="nav-overlay"></div>
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul role="list" class="nav-list | nav-list-primary" aria-label="primary">
+             
+              <li class="dropdown" data-dropdown>
+                  <a class="drop-flex-link" href="#" data-dropdown-btn>Features
+                    <img  class="arrow" src="images/icon-arrow-down.svg" alt="icon submenu">
+                  </a>
+             
+                <ul class="dropdown-submenu" role="list">
+                  <li>
+                    <a class="drop-flex-link" href="#">
+                      <img src="images/icon-todo.svg" alt="icon submenu">
+                      <span>Todo List</span>
+                    </a>
+                  </li> 
+                  <li>
+                    <a class="drop-flex-link" href="#">
+                      <img src="images/icon-calendar.svg" alt="icon submenu">
+                      <span>Calendar</span>
+                    </a>
+                  </li> 
+                  <li>
+                    <a class="drop-flex-link" href="#">
+                      <img src="images/icon-reminders.svg" alt="icon submenu">
+                      <span>Reminders</span>
+                    </a>
+                  </li> 
+                  <li>
+                    <a class="drop-flex-link" href="#">
+                      <img src="images/icon-planning.svg" alt="icon submenu">
+                      <span>Planning</span>
+                    </a>
+                  </li> 
+                </ul> 
+              </li>
+
+
+
+              <li class="dropdown" data-dropdown>                
+                  <a class="drop-flex-link" href="#" data-dropdown-btn>Company
+                    <img class="arrow" src="images/icon-arrow-down.svg" alt="icon submenu">
+                  </a>
+                 
+                <ul class="dropdown-submenu dropdown-submenuleft" role="list">
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </li> 
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+            <ul role="list" class="nav-list | nav-list-secondary">
+              <li><a href="#">Login</a></li>
+              <li class="register-cta"><a href="#">Register</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="even-columns">
+            <div class="hero-text-box | flow">
+              <h1 class="fs-primary-heading text-neutral-400 fw-bold">
+                <span class="sub-heading">Make</span> remote work
+              </h1>
+              <p>
+                Get your team in sync, no matter your location. Streamline
+                processes, create team rituals, and watch productivity soar.
+              </p>
+              <button class="button">Learn more</button>
+              <div class="hero-logo">
+                <img src="images/client-databiz.svg" alt="company logo" />
+                <img src="images/client-audiophile.svg" alt="company logo" />
+                <img src="images/client-meet.svg" alt="company logo" />
+                <img src="images/client-maker.svg" alt="company logo" />
+              </div>
+            </div>
+            <div class="hero-image">
+              <img class="img-mobile" src="images/image-hero-mobile.png" alt="remote work agent">
+              <img class="img-desktop" src="images/image-hero-desktop.png" alt="remote work agent">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
